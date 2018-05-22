@@ -11,7 +11,7 @@ classes_name =  ["aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car",
 
 
 def process_predicts(predicts):
-  p_classes = predicts[0, :, :, 0:20]
+  p_classes = predicts[0, :, :, 0:20]  #一共有20个类别，所以该向量维度为20
   C = predicts[0, :, :, 20:22]
   coordinate = predicts[0, :, :, 22:]
 
